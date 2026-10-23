@@ -55,6 +55,38 @@ This will also download the example images and microstructures.
 ```bash
 git clone https://github.com/NEFM-TUDresden/MCRpy.git ; pip install -e . 
 ```
+NB: If you want more control and be faster:
+```bash
+git clone https://github.com/NEFM-TUDresden/MCRpy.git 
+# if uv not installed
+curl -LsSf https://astral.sh/uv/install.sh | sh # linux/MacOS
+# if Windows OS use instead
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+uv init
+uv venv
+# linux/ MacOS
+.\.venv\bin\activate
+# Windows OS
+.\.venv\Scripts\activate
+# Python version <3., cause Tensorflow version
+uv python install '>=3.7,<3.9'
+# Install package, e.g. tensorflow
+uv pip install "tensorflow==2.7.1"
+```
+- Important! Add every package to the pyproject.toml by using:
+```bash
+uv add "tensorflow==2.7.1"
+```
+- If this wont work on Windows OS, add to pyproject.toml:
+```bash
+[tool.uv]
+required-environments = ["sys_platform == 'win32' and platform_machine == 'AMD64'"]
+uv sync
+```
+
+- Why not just pip install? 
+1. uv is checking versions compability
+2. Adjustment and Installation for other contributors and users would be easier
 
 ### For HPC
 On HPC clusters, it can be challenging to pip-install a Python package and at the same time keep access to pre-compiled modules like tensorflow. If the tensorflow installation has not been compiled for the correct hardware, the MCRpy performance can be quite underwhelming. A simple solution is to 
@@ -65,7 +97,7 @@ On HPC clusters, it can be challenging to pip-install a Python package and at th
 ## Dependencies
 
 You need Python >= 3.7 as well as the following packages:
-
+- Commen
 | package         | version |
 | ----            | ----    |
 | Numpy           | 1.20.1  |

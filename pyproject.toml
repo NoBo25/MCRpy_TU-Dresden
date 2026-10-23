@@ -1,0 +1,34 @@
+[project]
+name = "mcrpy-main"
+version = "0.1.0"
+description = "modified mcrpy from author(s) Raßloff et al. (TU Dresden)"
+readme = "README.md"
+requires-python = '>=3.7,<3.9'
+dependencies = [
+    "gooey==1.0.8.1",
+    "imageio-ffmpeg==0.4.5",
+    "matplotlib==3.3.4",
+    "numpy>1.20.1",
+    "pyevtk==1.4.1",
+    "pymks==0.4.1",
+    "scikit-learn==0.24.1",
+    "scipy==1.6.2",
+    "tensorflow==2.7.1",
+]
+
+[project.scripts]
+mcrpy-main = "mcrpy_main:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+required-environments = ["sys_platform == 'win32' and platform_machine == 'AMD64'"]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.4.1",
+    "pre-commit>=2.21.0",
+    "ruff>=0.17.2",
+]
