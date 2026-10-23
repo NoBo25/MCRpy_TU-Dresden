@@ -55,7 +55,11 @@ This will also download the example images and microstructures.
 ```bash
 git clone https://github.com/NEFM-TUDresden/MCRpy.git ; pip install -e . 
 ```
-NB: If you want more control and be faster:
+NB:Or you are cloning the fetched repo and have installed uv:
+```bash
+git clone https://github.com/NEFM-TUDresden/MCRpy.git ; uv sync 
+```
+NB: If you want more control and be faster from scratch:
 ```bash
 git clone https://github.com/NEFM-TUDresden/MCRpy.git 
 # if uv not installed
