@@ -130,6 +130,12 @@ MCRpy can be used
 ### MCRpy graphical user interface
 Thanks to the great package [Gooey](https://github.com/chriskiehl/Gooey), MCRpy can be accessed by a simple GUI. This helps to get started and allows MCR to non-programmers.
 
+From the repository root, start the GUI with:
+
+```bash
+uv run mcrpy
+```
+
 <p align="center"><img src="images/mcrpy_gui.png" height="600" alt="MCRpy GUI"> </img></p>
 
 The left-hand sind shows a list of all possible actions to perform with MCRpy, naturally starting with characterize and reconstruct. Match is a shortcut, performing characterization and immediate reconstruction from the same descriptors.
@@ -447,4 +453,3 @@ Some images are taken from [our publications](https://link.springer.com/article/
 
 ## License
 MCRpy is published under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
-
