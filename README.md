@@ -57,8 +57,9 @@ git clone https://github.com/NEFM-TUDresden/MCRpy.git ; pip install -e .
 ```
 NB:Or you are cloning the fetched repo and have installed uv:
 ```bash
-git clone https://github.com/NEFM-TUDresden/MCRpy.git ; uv sync 
+git clone https://github.com/NoBo25/MCRpy_TU-Dresden.git ; uv pip install -e . 
 ```
+
 NB: If you want more control and be faster from scratch:
 ```bash
 git clone https://github.com/NEFM-TUDresden/MCRpy.git 
@@ -85,7 +86,7 @@ uv add "tensorflow==2.7.1"
 ```bash
 [tool.uv]
 required-environments = ["sys_platform == 'win32' and platform_machine == 'AMD64'"]
-uv sync
+uv pip install -e .
 ```
 
 - Why not just pip install? 
