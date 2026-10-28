@@ -90,7 +90,7 @@ uv pip install -e .
 ```
 
 - Why not just pip install? 
-1. uv is checking versions compability
+1. uv is checking versions compability too and faster install overall
 2. Adjustment and Installation for other contributors and users would be easier
 
 ### For HPC
