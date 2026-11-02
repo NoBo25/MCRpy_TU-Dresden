@@ -39,3 +39,239 @@ For (2), @tf.function has experimental_relax_shapes=True option that relaxes arg
 2026-11-02 15:58:26,773 on INFO: Could create all 7 MG levels
 2026-11-02 15:58:26,774 on INFO: << make_descriptor_functions exited (elapsed 8.276s)
 2026-11-02 15:58:26,774 on INFO: >> run_characterization entered
+
+only gram-matrices
+
+2026-11-02 16:08:43,683 on INFO: >> make_descriptor_functions entered
+2026-11-02 16:08:47,537 on WARNING: For MG level number 4, an avgpooling remainder exists.
+2026-11-02 16:08:48,466 on WARNING: For MG level number 5, an avgpooling remainder exists.
+2026-11-02 16:08:49,540 on WARNING: For MG level number 6, an avgpooling remainder exists.
+2026-11-02 16:08:50,648 on INFO: Could create all 7 MG levels
+2026-11-02 16:08:50,648 on INFO: << make_descriptor_functions exited (elapsed 6.964s)
+2026-11-02 16:08:50,648 on INFO: >> run_characterization entered
+WARNING:tensorflow:Model was constructed with shape (None, 3000, 3000, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 3000, 3000, 1), dtype=tf.float64, name='input_1'), name='input_1', description="created by layer 'input_1'"), but it was called on an input with incompatible shape (1, 3000, 3000, 3).
+2026-11-02 16:08:50,770 on WARNING: Model was constructed with shape (None, 3000, 3000, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 3000, 3000, 1), dtype=tf.float64, name='input_1'), name='input_1', description="created by layer 'input_1'"), but it was called on an input with incompatible shape (1, 3000, 3000, 3).
+WARNING:tensorflow:Model was constructed with shape (None, 1500, 1500, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 1500, 1500, 1), dtype=tf.float64, name='input_2'), name='input_2', description="created by layer 'input_2'"), but it was called on an input with incompatible shape (1, 1500, 1500, 3).
+2026-11-02 16:08:51,790 on WARNING: Model was constructed with shape (None, 1500, 1500, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 1500, 1500, 1), dtype=tf.float64, name='input_2'), name='input_2', description="created by layer 'input_2'"), but it was called on an input with incompatible shape (1, 1500, 1500, 3).
+WARNING:tensorflow:Model was constructed with shape (None, 750, 750, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 750, 750, 1), dtype=tf.float64, name='input_3'), name='input_3', description="created by layer 'input_3'"), but it was called on an input with incompatible shape (1, 750, 750, 3).
+2026-11-02 16:08:52,833 on WARNING: Model was constructed with shape (None, 750, 750, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 750, 750, 1), dtype=tf.float64, name='input_3'), name='input_3', description="created by layer 'input_3'"), but it was called on an input with incompatible shape (1, 750, 750, 3).
+WARNING:tensorflow:Model was constructed with shape (None, 375, 375, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 375, 375, 1), dtype=tf.float64, name='input_4'), name='input_4', description="created by layer 'input_4'"), but it was called on an input with incompatible shape (1, 375, 375, 3).
+2026-11-02 16:08:53,698 on WARNING: Model was constructed with shape (None, 375, 375, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 375, 375, 1), dtype=tf.float64, name='input_4'), name='input_4', description="created by layer 'input_4'"), but it was called on an input with incompatible shape (1, 375, 375, 3).
+WARNING:tensorflow:Model was constructed with shape (None, 187, 187, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 187, 187, 1), dtype=tf.float64, name='input_5'), name='input_5', description="created by layer 'input_5'"), but it was called on an input with incompatible shape (1, 187, 187, 3).
+2026-11-02 16:08:54,621 on WARNING: Model was constructed with shape (None, 187, 187, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 187, 187, 1), dtype=tf.float64, name='input_5'), name='input_5', description="created by layer 'input_5'"), but it was called on an input with incompatible shape (1, 187, 187, 3).
+WARNING:tensorflow:Model was constructed with shape (None, 93, 93, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 93, 93, 1), dtype=tf.float64, name='input_6'), name='input_6', description="created by layer 'input_6'"), but it was called on an input with incompatible shape (1, 93, 93, 3).
+2026-11-02 16:08:55,588 on WARNING: Model was constructed with shape (None, 93, 93, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 93, 93, 1), dtype=tf.float64, name='input_6'), name='input_6', description="created by layer 'input_6'"), but it was called on an input with incompatible shape (1, 93, 93, 3).
+WARNING:tensorflow:Model was constructed with shape (None, 46, 46, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 46, 46, 1), dtype=tf.float64, name='input_7'), name='input_7', description="created by layer 'input_7'"), but it was called on an input with incompatible shape (1, 46, 46, 3).
+2026-11-02 16:08:56,710 on WARNING: Model was constructed with shape (None, 46, 46, 1) for input KerasTensor(type_spec=TensorSpec(shape=(None, 46, 46, 1), dtype=tf.float64, name='input_7'), name='input_7', description="created by layer 'input_7'"), but it was called on an input with incompatible shape (1, 46, 46, 3).
+2026-11-02 16:09:16,220 on ERROR: Exception in function run_characterization
+
+        with *args = (MCRpy Microstructure object at 1811888083824 
+            with spatial resolution (3000, 3000) (2D),
+            using 3 phases in multiphase representation., {'GramMatrices': <function make_descriptor_functions.<locals>.apply_descriptor.<locals>.inner at 0x000001A5B16A3040>})
+
+        and *kwargs = {}
+Traceback (most recent call last):
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\src\log.py", line 80, in wrapper
+    result = function(*args, **kwargs)
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 101, in run_characterization
+    return {
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 102, in <dictcomp>
+    descriptor_type: convert(descriptor_function(ms))
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 73, in inner
+    return d(ms.xx)
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\tensorflow\python\util\traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\tensorflow\python\eager\execute.py", line 58, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.UnimplementedError:  Fused conv implementation does not support grouped convolutions for now.
+	 [[node BiasAdd
+ (defined at C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\descriptors\GramMatrices.py:144)
+]] [Op:__inference_singlephase_wrapper_6586]
+
+Errors may have originated from an input operation.
+Input Source operations connected to node BiasAdd:
+In[0] Conv2D (defined at C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\descriptors\GramMatrices.py:143)	
+In[1] BiasAdd/bias:
+
+Operation defined at: (most recent call last)
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\gui_mcrpy.py", line 273, in <module>
+>>>     call_main()
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\gooey\python_bindings\gooey_decorator.py", line 134, in <lambda>
+>>>     return lambda *args, **kwargs: func(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\gui_mcrpy.py", line 269, in call_main
+>>>     chosen_function(args)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 124, in main
+>>>     characterizations = characterize(microstructures, settings)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 197, in characterize
+>>>     characterizations = [run_characterization(microstructure, descriptors) for microstructure in microstructures]
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 197, in <listcomp>
+>>>     characterizations = [run_characterization(microstructure, descriptors) for microstructure in microstructures]
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\src\log.py", line 80, in wrapper
+>>>     result = function(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 101, in run_characterization
+>>>     return {
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 102, in <dictcomp>
+>>>     descriptor_type: convert(descriptor_function(ms))
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 73, in inner
+>>>     return d(ms.xx)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\descriptors\PhaseDescriptor.py", line 63, in singlephase_wrapper
+>>>     phase_descriptor = tf.expand_dims(singlephase_descriptor(x), axis=0)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\descriptors\Descriptor.py", line 81, in multigrid_descriptor
+>>>     for mg_level, singlephase_descriptor in enumerate(singlephase_descriptors):
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\descriptors\Descriptor.py", line 91, in multigrid_descriptor
+>>>     mg_desc = singlephase_descriptor(mg_pool)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\utils\traceback_utils.py", line 64, in error_handler
+>>>     return fn(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\engine\base_layer.py", line 1083, in __call__
+>>>     outputs = call_fn(inputs, *args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\utils\traceback_utils.py", line 92, in error_handler
+>>>     return fn(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\engine\functional.py", line 451, in call
+>>>     return self._run_internal_graph(
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\engine\functional.py", line 589, in _run_internal_graph
+>>>     outputs = node.layer(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\utils\traceback_utils.py", line 64, in error_handler
+>>>     return fn(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\engine\base_layer.py", line 1083, in __call__
+>>>     outputs = call_fn(inputs, *args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\utils\traceback_utils.py", line 92, in error_handler
+>>>     return fn(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\layers\core\lambda_layer.py", line 196, in call
+>>>     result = self.function(inputs, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\descriptors\GramMatrices.py", line 144, in encoding_layer
+>>>     ms_shifted = tf.nn.bias_add(ms_extended, subtraction_biases)
+>>> 
+
+Function call stack:
+singlephase_wrapper -> encoding_layer
+
+Traceback (most recent call last):
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\gui_mcrpy.py", line 273, in <module>
+    call_main()
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\gooey\python_bindings\gooey_decorator.py", line 134, in <lambda>
+    return lambda *args, **kwargs: func(*args, **kwargs)
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\gui_mcrpy.py", line 269, in call_main
+    chosen_function(args)
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 124, in main
+    characterizations = characterize(microstructures, settings)
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 197, in characterize
+    characterizations = [run_characterization(microstructure, descriptors) for microstructure in microstructures]
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 197, in <listcomp>
+    characterizations = [run_characterization(microstructure, descriptors) for microstructure in microstructures]
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\src\log.py", line 80, in wrapper
+    result = function(*args, **kwargs)
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 101, in run_characterization
+    return {
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 102, in <dictcomp>
+    descriptor_type: convert(descriptor_function(ms))
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 73, in inner
+    return d(ms.xx)
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\tensorflow\python\util\traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\tensorflow\python\eager\execute.py", line 58, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.UnimplementedError:  Fused conv implementation does not support grouped convolutions for now.
+	 [[node BiasAdd
+ (defined at C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\descriptors\GramMatrices.py:144)
+]] [Op:__inference_singlephase_wrapper_6586]
+
+Errors may have originated from an input operation.
+Input Source operations connected to node BiasAdd:
+In[0] Conv2D (defined at C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\descriptors\GramMatrices.py:143)	
+In[1] BiasAdd/bias:
+
+Operation defined at: (most recent call last)
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\gui_mcrpy.py", line 273, in <module>
+>>>     call_main()
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\gooey\python_bindings\gooey_decorator.py", line 134, in <lambda>
+>>>     return lambda *args, **kwargs: func(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\gui_mcrpy.py", line 269, in call_main
+>>>     chosen_function(args)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 124, in main
+>>>     characterizations = characterize(microstructures, settings)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 197, in characterize
+>>>     characterizations = [run_characterization(microstructure, descriptors) for microstructure in microstructures]
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 197, in <listcomp>
+>>>     characterizations = [run_characterization(microstructure, descriptors) for microstructure in microstructures]
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\src\log.py", line 80, in wrapper
+>>>     result = function(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 101, in run_characterization
+>>>     return {
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 102, in <dictcomp>
+>>>     descriptor_type: convert(descriptor_function(ms))
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\characterize.py", line 73, in inner
+>>>     return d(ms.xx)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\descriptors\PhaseDescriptor.py", line 63, in singlephase_wrapper
+>>>     phase_descriptor = tf.expand_dims(singlephase_descriptor(x), axis=0)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\descriptors\Descriptor.py", line 81, in multigrid_descriptor
+>>>     for mg_level, singlephase_descriptor in enumerate(singlephase_descriptors):
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\descriptors\Descriptor.py", line 91, in multigrid_descriptor
+>>>     mg_desc = singlephase_descriptor(mg_pool)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\utils\traceback_utils.py", line 64, in error_handler
+>>>     return fn(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\engine\base_layer.py", line 1083, in __call__
+>>>     outputs = call_fn(inputs, *args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\utils\traceback_utils.py", line 92, in error_handler
+>>>     return fn(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\engine\functional.py", line 451, in call
+>>>     return self._run_internal_graph(
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\engine\functional.py", line 589, in _run_internal_graph
+>>>     outputs = node.layer(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\utils\traceback_utils.py", line 64, in error_handler
+>>>     return fn(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\engine\base_layer.py", line 1083, in __call__
+>>>     outputs = call_fn(inputs, *args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\utils\traceback_utils.py", line 92, in error_handler
+>>>     return fn(*args, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\.venv\lib\site-packages\keras\layers\core\lambda_layer.py", line 196, in call
+>>>     result = self.function(inputs, **kwargs)
+>>> 
+>>>   File "C:\Users\born\Desktop\Part1_Reconstruction_microstructure\MCRpy-main\mcrpy\descriptors\GramMatrices.py", line 144, in encoding_layer
+>>>     ms_shifted = tf.nn.bias_add(ms_extended, subtraction_biases)
+>>> 
+
+Function call stack:
+singlephase_wrapper -> encoding_layer
