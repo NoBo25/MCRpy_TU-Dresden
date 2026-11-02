@@ -133,7 +133,8 @@ Thanks to the great package [Gooey](https://github.com/chriskiehl/Gooey), MCRpy 
 From the repository root, start the GUI with:
 
 ```bash
-uv run mcrpy
+# if not activated type: MCRpy-main\.venv\Scripts\activate
+python -m mcrpy.gui_mcrpy
 ```
 
 <p align="center"><img src="images/mcrpy_gui.png" height="600" alt="MCRpy GUI"> </img></p>
